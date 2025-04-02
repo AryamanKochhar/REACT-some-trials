@@ -1,14 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
 
-function App() {
+function counterapp1() {
+  const [count,setc]=useState(0);
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>Welcome to React</p>
-      </header>
+    <div style={{textAlign:"center"}}>
+      <h1> Counter : {count} </h1>
+      <button onClick={() => setc(count+1)}>Increase</button>
+      <button onClick={() => setc(count-1)}>Decrease</button>
+      <button onClick={() => setc(0)}>Reset</button>
     </div>
-  );
+  )
 }
 
-export default App;
+export default counterapp1;
