@@ -4,6 +4,7 @@ import { useState } from 'react';
 
 function counterapp1() {
   const [count,setc]=useState(0);
+  
   return (
     <div style={{textAlign:"center"}}>
       <h1> Counter : {count} </h1>
