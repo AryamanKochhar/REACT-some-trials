@@ -1,9 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
-import Calculator from './Calculator';
+import Calculator from './Counter';
 
-function counterapp1() {
+function Counterapp1() {
   
   return (
     <div style={{textAlign:"center"}}>
@@ -12,4 +12,4 @@ function counterapp1() {
   )
 }
 
-export default counterapp1;
+export default Counterapp1;
