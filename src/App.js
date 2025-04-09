@@ -1,17 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-import { useState } from 'react';
-import Calculator from './Counter';
-import Welcome from './function_welcome';
+import React from 'react';
+import UserForm from './userform';
 
-function Counterapp1() {
-  
+function App() {
+  const handleFormSubmit = (data) => {
+    alert(`Form Submitted\nName: ${data.name}\nEmail: ${data.email}`);
+    // You can also post this to an API or save in state
+  };
+
   return (
-    <div style={{textAlign:"center"}}>
-      {/* <Calculator /> */}
-      <Welcome name="Aryaman" />;
+    <div>
+      <UserForm
+        title="Register User"
+        onSubmit={handleFormSubmit}
+        buttonLabel="Register"
+      />
     </div>
-  )
+  );
 }
 
-export default Counterapp1;
+export default App;
